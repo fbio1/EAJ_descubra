@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     TextView horario2;
     TextView mensagem;
 
-    private int posicao;
+    ViewPager vp;
 
     final String[] permissoes = new String[]{
             Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -59,16 +59,13 @@ public class MainActivity extends AppCompatActivity {
         imagem = (ImageView) findViewById(R.id.image_header);
         imagem.setImageResource(R.drawable.eaj);
 
-        ViewPager vp = (ViewPager) findViewById(R.id.pager);
+        vp = (ViewPager) findViewById(R.id.pager);
         PagerAdapter pa = new FixedTabsPageAdapter(getSupportFragmentManager());
 
         vp.setAdapter(pa);
 
-
         tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(vp);
-
-        posicao = tabLayout.getTabCount();
 
         vp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -174,10 +171,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (posicao > 0) {
-            tabLayout.getTabAt(0).select();
+        if (vp.getCurrentItem() > 0) {
+            vp.setCurrentItem(0);
         }else{
-            super.onBackPressed();
+           finish();
         }
     }
 }
