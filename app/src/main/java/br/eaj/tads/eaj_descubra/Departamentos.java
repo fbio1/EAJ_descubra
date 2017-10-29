@@ -1,5 +1,7 @@
 package br.eaj.tads.eaj_descubra;
 
+import com.google.android.gms.maps.model.LatLng;
+
 /**
  * Created by fbio_ on 15/10/2017.
  */
@@ -12,13 +14,12 @@ public class Departamentos {
     private String email;
     private String telefone;
     private String horario_funcionamento;
-//    private double latitude;
-//    private double longitute;
+    private LatLng latitude;
 
     public Departamentos() {
     }
 
-    public Departamentos(int imagem, String nome, String descricao, String responsavel, String email, String telefone, String horario_funcionamento) {
+    public Departamentos(int imagem, String nome, String descricao, String responsavel, String email, String telefone, String horario_funcionamento, LatLng latitude) {
         this.imagem = imagem;
         this.nome = nome;
         this.descricao = descricao;
@@ -26,6 +27,7 @@ public class Departamentos {
         this.email = email;
         this.telefone = telefone;
         this.horario_funcionamento = horario_funcionamento;
+        this.latitude = latitude;
     }
 
     public int getImagem() {
@@ -84,19 +86,11 @@ public class Departamentos {
         this.horario_funcionamento = horario_funcionamento;
     }
 
-//    public double getLatitude() {
-//        return latitude;
-//    }
-//
-//    public void setLatitude(double latitude) {
-//        this.latitude = latitude;
-//    }
-//
-//    public double getLongitute() {
-//        return longitute;
-//    }
-//
-//    public void setLongitute(double longitute) {
-//        this.longitute = longitute;
-//    }
+    public LatLng getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(LatLng latitude) {
+        this.latitude = latitude;
+    }
 }

@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     TextView horario2;
     TextView mensagem;
 
+    private int posicao;
+
     final String[] permissoes = new String[]{
             Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION,
@@ -62,8 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
         vp.setAdapter(pa);
 
+
         tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(vp);
+
+        posicao = tabLayout.getTabCount();
 
         vp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -92,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     email2 = (TextView) findViewById(R.id.email2);
                     horario2 = (TextView) findViewById(R.id.horario2);
                     mensagem = (TextView) findViewById(R.id.mensagem);
+
+                    TextView flag = (TextView) findViewById(R.id.flag);
+                    flag.setText("false");
 
                     imagem.setImageResource(R.drawable.eaj);
                     imagem1.setVisibility(View.GONE);
@@ -162,5 +170,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         PermissionUtils.validate(this, 0, permissoes);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (posicao > 0) {
+            tabLayout.getTabAt(0).select();
+        }else{
+            super.onBackPressed();
+        }
     }
 }
