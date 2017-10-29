@@ -138,7 +138,7 @@ public class FragmentRecycler extends Fragment {
 
 
     public void carregaFrutas() {
-        departamentosList.add((new Departamentos(R.drawable.info, "Prédio de Informatica", "Castelo do God Taniro (Em processo de construção)", "Taniro", "tanirocr@gmail.com", "3342-4836", "08:00hrs - 17:00hrs", new LatLng(-5.885786, -35.365748))));
+        departamentosList.add((new Departamentos(R.drawable.info, "Prédio de Informatica", "Castelo do God Taniro", "Taniro", "tanirocr@gmail.com", "3342-4836", "08:00hrs - 17:00hrs", new LatLng(-5.885786, -35.365748))));
         departamentosList.add((new Departamentos(R.drawable.aqui, "Aquicultura", "Departamento dos peixes", "Paulo", "Não existente", "3342-4829", "08:00hrs - 17:00hrs", new LatLng(-5.887602, -35.361685))));
         departamentosList.add((new Departamentos(R.drawable.biblioteca, "Biblioteca", "Departamento dos livros", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885911, -35.366131))));
         departamentosList.add((new Departamentos(R.drawable.avi, "Avicultura", "Algo que nao sei falar", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.886730, -35.363363))));
