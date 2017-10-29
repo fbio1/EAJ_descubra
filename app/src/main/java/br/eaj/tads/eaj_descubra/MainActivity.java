@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
     Context context;
     TabLayout tabLayout;
     ImageView imagem;
