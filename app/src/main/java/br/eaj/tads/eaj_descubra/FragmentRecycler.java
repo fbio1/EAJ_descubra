@@ -138,16 +138,21 @@ public class FragmentRecycler extends Fragment {
 
 
     public void carregaFrutas() {
-        departamentosList.add((new Departamentos(R.drawable.info, "Prédio de Informatica", "Castelo do God Taniro", "Taniro", "tanirocr@gmail.com", "3342-4836", "08:00hrs - 17:00hrs", new LatLng(-5.885786, -35.365748))));
+        departamentosList.add((new Departamentos(R.drawable.aloj_mas, "Alojamento Masculino", "Alojamento Masculino", "Não existente", "Não existente", "Não existente", "08:00hrs - 17:00hrs", new LatLng(-5.885977, -35.363771))));
+        departamentosList.add((new Departamentos(R.drawable.aloja_fem, "Alojamento Feminino", "Alojamento Feminino", "Não existente", "Não existente", "Não existente", "08:00hrs - 17:00hrs", new LatLng(-5.885629, -35.364040))));
+        departamentosList.add((new Departamentos(R.drawable.pecu_indus, "Agropecuaria", "Algo que nao sei falar", "Não existente", "Não existente", "3342-4805", "08:00hrs - 17:00hrs", new LatLng(-5.885626, -35.366138))));
+        departamentosList.add((new Departamentos(R.drawable.apico, "Apicolas", "Departamento das abelhas", "Não existente", "Não existente", "Não existente", "08:00hrs - 17:00hrs", new LatLng(-5.885880, -35.362644))));
         departamentosList.add((new Departamentos(R.drawable.aqui, "Aquicultura", "Departamento dos peixes", "Paulo", "Não existente", "3342-4829", "08:00hrs - 17:00hrs", new LatLng(-5.887602, -35.361685))));
-        departamentosList.add((new Departamentos(R.drawable.biblioteca, "Biblioteca", "Departamento dos livros", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885911, -35.366131))));
         departamentosList.add((new Departamentos(R.drawable.avi, "Avicultura", "Algo que nao sei falar", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.886730, -35.363363))));
+        departamentosList.add((new Departamentos(R.drawable.biblioteca, "Biblioteca", "Departamento dos livros", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885911, -35.366131))));
         departamentosList.add((new Departamentos(R.drawable.cvt, "CVT", "Departamento do TADS", "Iron", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.884567, -35.364924))));
+        departamentosList.add((new Departamentos(R.drawable.capela, "Capela", "Capela", "Não existente", "Não existente", "Não existente", "08:00hrs - 17:00hrs", new LatLng(-5.885117, -35.366293))));
         departamentosList.add((new Departamentos(R.drawable.diracao, "Direção", "Departamento de quem tem poder", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.886420, -35.362260))));
         departamentosList.add((new Departamentos(R.drawable.graduacao, "Graduação", "Departamento do povo da graduação", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.884536, -35.364029))));
         departamentosList.add((new Departamentos(R.drawable.instituto, "Instituto de Neurociências", "Departameto esquisito", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885081, -35.365509))));
         departamentosList.add((new Departamentos(R.drawable.medio, "Ensino Médio", "Departamento dos padawans", "Não existente", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885205, -35.364782))));
-        departamentosList.add((new Departamentos(R.drawable.pecu_indus, "Agropecuaria e Agroindustria", "Algo que nao sei falar", "Não existente", "Não existente", "3342-4805", "08:00hrs - 17:00hrs", new LatLng(-5.885626, -35.366138))));
-        departamentosList.add((new Departamentos(R.drawable.ru, "Restaurante Universitario", "Departamento dos cardapios", "Taiana", "Não existente", "3342-2297", "08:00hrs - 17:00hrs", new LatLng(-5.885525, -35.36293))));
+        departamentosList.add((new Departamentos(R.drawable.quadra, "Quadra", "Departamento Quadra", "Não existente", "Não existente", "Não existente", "08:00hrs - 17:00hrs", new LatLng(-5.885629, -35.364040))));
+        departamentosList.add((new Departamentos(R.drawable.info, "Prédio de Informatica", "Castelo do God Taniro", "Taniro", "tanirocr@gmail.com", "3342-4836", "08:00hrs - 17:00hrs", new LatLng(-5.885786, -35.365748))));
+
     }
 }
